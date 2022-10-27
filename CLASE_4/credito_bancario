@@ -1,0 +1,12 @@
+
+edad = int(input("Defina su edad:\n"))
+antiguedad  = int(input("Defina su antiguedad:\n"))
+ingresos  = int(input("Defina sus ingresos:\n"))
+
+if edad >= 18 and antiguedad >= 3 and ingresos >=2500:
+    print("Prestamo Otorgado")
+elif antiguedad < 3 and ingresos >= 4000:
+    print("Prestamo Otorgado")
+
+else:
+    print("No se pudo otrogar el credito")

@@ -1,6 +1,0 @@
-#controladores de flujo condicionales, else y elif
-edad=30
-if edad >= 18:   #edad ahora tiene TRUE
-    print("es adulto")
-if True:
-    "sii es true"

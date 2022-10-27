@@ -1,0 +1,21 @@
+#genereciones digitales
+
+#solciitamos el año de nacido
+
+anio_nacido = int(input("Ingrese el año de nacimiento:\n"))
+
+#definimos la generacion
+
+if anio_nacido >= 1920 and anio_nacido <= 1940:
+    print("Generacion silenciosa")
+elif anio_nacido >= 1946 and anio_nacido <= 1964:
+    print("Generacion boomer")
+elif anio_nacido >= 1965 and anio_nacido <= 1979:
+    print("Generacion X")
+elif anio_nacido >= 1980 and anio_nacido <= 2000:
+    print("Generacion Y")
+elif anio_nacido >= 2001 and anio_nacido <= 2010:
+    print("Generacion Z")
+
+else:
+    print("No existe generación asociada")
