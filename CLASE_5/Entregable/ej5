@@ -1,0 +1,31 @@
+
+lista_enteros = [0,1,2,3,4,5,6,7,8,9]
+x = True
+while x:
+    #Solicito el numero entero
+    num_entero = int(input ("Ingrese un numero entero:\n"))
+    
+    #Calculo con el modulo si el resto es 0 o no para determinar la paridad
+    if num_entero % 2 != 0:
+
+        print("el numero ingresado no es entero, vuelve a intentarlo\n")
+        continue
+
+    else:
+        numero_presente = num_entero in lista_enteros
+
+        print("El numero entero ingresado es el ", num_entero)
+        if numero_presente:
+            print("y se encuentra presente en la lista")
+        else:
+            print("pero no se encuentra en la lista")
+        salida = str (input("Desa salir del programa? (Y/N) "))
+
+
+        if salida == "Y":
+            x = False
+        elif salida== "N":
+            x = True
+        
+        else:
+            continue

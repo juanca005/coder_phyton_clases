@@ -1,0 +1,32 @@
+long_lista_1= int(input("Ingrese el tamaño de la primer lista:\n"))
+lista_1=[]
+for valor in range(long_lista_1):
+    valor=input("Ingrese el elemento: ")
+    lista_1.append(valor)
+
+
+print ("La primer lista ingresada es: " , lista_1)
+
+long_lista_2= int(input("Ingrese el tamaño de la segunda lista:\n"))
+lista_2=[]
+for valor in range(long_lista_2):
+    valor=input("Ingrese el elemento: ")
+    lista_2.append(valor)
+
+
+print ("La segunda lista ingresada es: " , lista_2)
+
+lista_3=[]
+
+
+for letra in lista_1:
+    if letra in lista_2 and letra not in lista_3:
+        lista_3.append(letra)
+
+
+print ("La lista final es: " , lista_3)
+
+
+
+
+

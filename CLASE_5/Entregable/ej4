@@ -1,0 +1,12 @@
+cant_numeros = int(input("Ingrese la cantidad de numeros a introducir:\n"))
+suma=0
+
+for valor in range(cant_numeros):  #valor es (0,1,2,3)
+    numero = int(input("Ingrese el numero:\n"))
+    #realizo la suma de cada posicion
+    suma= suma + numero
+    #calculo la media aritmetica
+    media = suma/cant_numeros
+
+#imprimo el valor final de la media
+print("la media es: ", media)

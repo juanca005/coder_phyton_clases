@@ -1,0 +1,60 @@
+#creo una lista vacia
+lista=[]
+print(type(lista))
+
+#itero desde el 0 al 10
+for numero in range(0,11):
+    #por cada elemento lo agrego a la lista
+    lista.append(numero)
+
+#imprimo la lista final
+print(lista)
+
+#creo una lista vacia
+lista_2=[]
+
+#itero desde el 0 al 10
+for numero in range(-10,1):
+    #por cada elemento lo agrego a la lista
+    lista_2.append(numero)
+
+#imprimo la lista final
+print(lista_2)
+
+
+#creo una lista vacia
+lista_3=[]
+
+#itero desde el 0 al 10
+for numero in range(0,21,2):
+    #por cada elemento lo agrego a la lista
+    lista_3.append(numero)
+
+#imprimo la lista final
+print(lista_3)
+
+
+#creo una lista vacia
+lista_4=[]
+
+#itero desde el 0 al 10
+for numero in range(-19,1,2):
+    #por cada elemento lo agrego a la lista
+    lista_4.append(numero)
+
+#imprimo la lista final
+print(lista_4)
+
+
+#creo una lista vacia
+lista_5=[]
+for valor in range(0,55):
+    salto = valor % 5
+    if salto ==0:
+        lista_5.append(valor)
+
+#imprimo la lista final
+print(lista_5)
+
+
+

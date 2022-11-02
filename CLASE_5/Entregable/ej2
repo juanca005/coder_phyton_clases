@@ -1,0 +1,15 @@
+#defino una condicion para que el sistema continue en ejecución
+x = True
+while x:
+    #Solicito el numero impar
+    num_impar = int(input ("Ingrese un numero impar:\n"))
+    
+    #Calculo con el modulo si el resto es 0 o no para determinar la paridad
+    if num_impar % 2 == 0:
+
+        print("El numero ingresado no es impar, vuelve a intentarlo\n")
+        continue
+
+    else:
+        print("El numero impar ingresado es: ", num_impar)
+        x = False
