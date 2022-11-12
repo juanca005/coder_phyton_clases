@@ -1,0 +1,16 @@
+#conjunto es coleccion no ordenada de objetos unicos ---> set
+#conjunto = {"hola","chau"}  es tipo set
+#un conjunto no puede contener objetos mutables como una lista, si podria ser una tupla
+#el update solo agrega iterables como una lista....si quiero un valor solo uso el add
+#discard sino lo encuentra no pasa nada 
+#remove sino lo encuentra explota
+#el while con listas,tuplas si tiene algo lo toma como true
+#diccionario es una coleccion NO ordenada de objetos
+
+
+colores = {"rojo","blanco","azul"}
+
+
+colores.update(["violeta","dorado"])
+print(colores)
+

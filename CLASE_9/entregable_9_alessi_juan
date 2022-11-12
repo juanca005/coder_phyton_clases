@@ -24,7 +24,7 @@ print ("ANIO BISIESTO\nAutor: Alessi Juan\n")
 dato_correcto = True
 
 while dato_correcto:
-    #solicito e ingreso del año a evaluar
+    #analizo si el ingreso es un dato entero para evaluar como año
     try:
         anio_ingresado = int(input("Ingrese el año a evaluar:\n"))
     except ValueError:
@@ -36,8 +36,6 @@ while dato_correcto:
         es_anio_bisiesto = anio_bisiesto(anio_ingresado)
         if es_anio_bisiesto:
             print("SI es un año bisiesto")
-
-
             option = input("¿Desea ingresar otro año (y/n) \n")
             if option == 'y':
                 continue
