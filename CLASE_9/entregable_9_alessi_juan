@@ -19,7 +19,7 @@ def  anio_bisiesto(var_anio):
         return anio_bisiesto_ok
 
 #inicio del programa
-print ("ANIO BISIESTO\nAutor: Alessi Juan\n")
+print ("\tSISTEMA AÑO BISIESTO\n\tAutor: Alessi Juan\n")
 
 dato_correcto = True
 
@@ -28,7 +28,7 @@ while dato_correcto:
     try:
         anio_ingresado = int(input("Ingrese el año a evaluar:\n"))
     except ValueError:
-        print("Debes ingresar un valor entero como año")
+        print("Se debe ingresar un valor entero como año")
         continue
 
     if anio_ingresado:
@@ -36,21 +36,37 @@ while dato_correcto:
         es_anio_bisiesto = anio_bisiesto(anio_ingresado)
         if es_anio_bisiesto:
             print("SI es un año bisiesto")
-            option = input("¿Desea ingresar otro año (y/n) \n")
-            if option == 'y':
-                continue
-            elif option == 'n':
-                print("Gracias por utilizar el sistema\n")
-                dato_correcto = False
+
+            continua = True
+            while continua:
+
+                option = input("¿Desea ingresar otro año? (y/n) \n")
+                #uso lower por si el usuario ingresa la letra en mayuscula, siempre validaremos la minuscula con la funcion
+                if option.lower() == 'y':
+                    continua = False
+                    continue
+                elif option.lower() == 'n':
+                    print("Gracias por utilizar el sistema\n")
+                    dato_correcto = False
+                    continua = False
+                else:
+                    print("Ingrese una opción valida:")
+                    continue
 
         else:
             print("NO es un año bisiesto")
+            continua = True
+            while continua:
 
-            option = input("¿Desea ingresar otro año (y/n) \n")
-            if option == 'y':
-                continue
-            elif option == 'n':
-                print("Gracias por utilizar el sistema\n")
-                dato_correcto = False
-
+                option = input("¿Desea ingresar otro año? (y/n) \n")
+                if option.lower() == 'y':
+                    continua = False
+                    continue
+                elif option.lower() == 'n':
+                    print("Gracias por utilizar el sistema\n")
+                    dato_correcto = False
+                    continua = False
+                else:
+                    print("Ingrese una opción valida:")
+                    continue
 
