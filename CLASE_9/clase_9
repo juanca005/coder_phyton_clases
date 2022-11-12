@@ -1,0 +1,76 @@
+#funciones
+
+def miFuncionContar(valor):  #el retorno de una funcion sin return es NONE
+    aux=0
+    for valores in valor:
+        aux=aux+1
+    print(aux)
+
+    return 0
+
+
+miFuncionContar("hola")
+
+
+def suma(num1,num2):
+    total = num1+num2
+    return total  #total es una variable local para la funcion y no la podria usar directo en el print de afuera
+
+resultado_final = suma(2,2)    #rsultado final toma el return total
+
+
+if resultado_final > 2:
+    print("estamooo")
+else:
+    print("no estamosss")
+
+
+#nombre de las funciones en minusculas....
+
+# a,b = funcion()  y si esa funcion retorno dos valores se asignan a "a" y "b" respectivamente
+
+
+#EJERCICIO 1
+
+def saludar(ciudad):
+    print("hola {}  " .format(ciudad) )     # f adelante sino devuelve un string
+
+saludar("argentina")
+
+
+#EJERCICIO 2
+
+def media(mi_lista):
+
+    longitud= len(mi_lista)
+    media= sum(mi_lista)/longitud
+    return media
+
+
+    
+
+
+lista = [2,5]
+final = media(lista)
+
+print (final)
+
+#EJERCICIO 3
+
+def es_multiplo(var1, var2):
+    if var1 % var2 == 0:
+        return True
+    else:
+        return False
+
+valor_1 = int(input("ingrese el primer numero"))
+
+valor_2 = int(input("ingrese el primer numero"))
+
+if es_multiplo(valor_1, valor_2):
+    
+    print("es multiplo")
+else:
+    print("no  es multiplo")
+
+

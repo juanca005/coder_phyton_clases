@@ -1,0 +1,58 @@
+#definimos la función que determina si el año es bisiesto
+def  anio_bisiesto(var_anio):
+    #hago las validaciones por 4, 100 y 400 (para el caso excepcional del 1900)
+    if var_anio % 4 == 0:
+        if var_anio % 100 == 0:
+            if var_anio % 400 == 0:
+                anio_bisiesto_ok = True
+                return anio_bisiesto_ok
+            else:
+                anio_bisiesto_ok = False
+                return anio_bisiesto_ok
+
+        else:
+            anio_bisiesto_ok = True
+            return anio_bisiesto_ok
+
+    else:
+        anio_bisiesto_ok = False
+        return anio_bisiesto_ok
+
+#inicio del programa
+print ("ANIO BISIESTO\nAutor: Alessi Juan\n")
+
+dato_correcto = True
+
+while dato_correcto:
+    #solicito e ingreso del año a evaluar
+    try:
+        anio_ingresado = int(input("Ingrese el año a evaluar:\n"))
+    except ValueError:
+        print("Debes ingresar un valor entero como año")
+        continue
+
+    if anio_ingresado:
+
+        es_anio_bisiesto = anio_bisiesto(anio_ingresado)
+        if es_anio_bisiesto:
+            print("SI es un año bisiesto")
+
+
+            option = input("¿Desea ingresar otro año (y/n) \n")
+            if option == 'y':
+                continue
+            elif option == 'n':
+                print("Gracias por utilizar el sistema\n")
+                dato_correcto = False
+
+        else:
+            print("NO es un año bisiesto")
+
+            option = input("¿Desea ingresar otro año (y/n) \n")
+            if option == 'y':
+                continue
+            elif option == 'n':
+                print("Gracias por utilizar el sistema\n")
+                dato_correcto = False
+
+

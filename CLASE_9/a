@@ -1,0 +1,15 @@
+def es_multiplo(var1, var2):
+    if var1 % var2 == 0:
+        return True
+    else:
+        return False
+
+valor_1 = int(input("ingrese el primer numero"))
+
+valor_2 = int(input("ingrese el primer numero"))
+
+if es_multiplo(valor_1, valor_2):
+    
+    print("es multiplo")
+else:
+    print("no  es multiplo")
